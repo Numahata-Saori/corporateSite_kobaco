@@ -438,9 +438,17 @@ p {
   width: 100%;
   position: relative;
 }
+@media screen and (min-width: 744px) {
+  .btn-wrap {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1024px) {
   .btn-wrap {
-    width: 215px;
+    width: 240px;
+    margin: 0;
   }
 }
 .btn-wrap a {
@@ -1286,6 +1294,11 @@ p {
   margin-top: 40px;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 744px) {
+  .top-cont__title-wrap {
+    margin-top: 70px;
+  }
+}
 .top-cont__title-en {
   font-size: 2.3125rem;
   font-weight: bold;
@@ -1301,9 +1314,21 @@ p {
 }
 
 .top-illust {
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #FFFFFF 100%), url(../img/);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #FFFFFF 100%), url(../img/top-company.png);
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-clip-path: none;
+          clip-path: none;
+  padding-bottom: 230px;
+  margin-top: -40px;
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .top-illust {
+    background: url(../img/top-company.png);
+    background-size: contain;
+    padding-bottom: 20vw;
+  }
 }
 
 .child-headline__wrap {
@@ -1316,6 +1341,12 @@ p {
   font-weight: bold;
   letter-spacing: 5px;
   line-height: 1;
+}
+@media screen and (min-width: 744px) {
+  .child-headline__en {
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
 }
 .child-headline__ja {
   color: #4a4949;
@@ -1390,9 +1421,17 @@ p {
 @media screen and (min-width: 1024px) {
   .idea__secondary-content {
     flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
   }
 }
-.idea__secondary-title {
+.idea__secondary-headline {
+  height: 100%;
+}
+.idea__secondary-headline .child-headline__en {
+  color: #fff;
+}
+.idea__secondary-headline .child-headline__ja {
   color: #fff;
   font-size: 1.2rem;
 }
