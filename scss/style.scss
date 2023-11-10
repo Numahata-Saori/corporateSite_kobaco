@@ -24,7 +24,11 @@ $base-color: #fff;
 $theme-color01 :#4a4949;
 $theme-color02 :#7b7a7a;
 $theme-color03 :#ebac18;
-
+$theme-color02-Light01: #EDEDED;
+$theme-color02-Light02: #D3D3D3;
+// #ddd
+// #e8e8e8
+// #c0c0c0
 
 $font-base-go: 'Noto Sans JP', sans-serif;
 $font-tsukua-rdgo: "fot-tsukuardgothic-std", sans-serif;
@@ -860,7 +864,7 @@ p {
 }
 
 .business {
-	background-color: #EDEDED;
+	background-color: $theme-color02-Light01;
 	padding: 40px 0;
 
 	@include bq(tb-x) {
@@ -1125,7 +1129,7 @@ p {
 }
 
 .news {
-	background-color: #EDEDED;
+	background-color: $theme-color02-Light01;
 	padding: 0 30px;
 
 	@include bq(tb-x) {
@@ -1362,10 +1366,10 @@ p {
 
 
 .footer {
-	border-top: 1px solid #c0c0c0;
+	border-top: 1px solid $theme-color02-Light02;
 
 	.copyright {
-		border-top: 1px solid #c0c0c0;
+		border-top: 1px solid $theme-color02-Light02;
 		font-weight: 700;
 		height: 70px;
 		padding: 20px;
@@ -1666,7 +1670,7 @@ p {
 
 
 .information {
-	background-color: #EDEDED;
+	background-color: $theme-color02-Light01;
 	padding: 50px 0;
 
 	&__main-content {
@@ -1739,4 +1743,86 @@ p {
 		}
 	}
 
+}
+
+
+.strength-child {
+	margin: 50px 0;
+}
+
+.strength-detail {
+	background: $theme-color02-Light01;
+	padding: 50px 0;
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-top: 20px;
+
+		@include bq(tb-s) {
+			flex-direction: row;
+		}
+		&:nth-child(2) {
+			@include bq(tb-s) {
+				flex-direction: row-reverse;
+			}
+		}
+
+		&:last-child {
+			.strength-detail__container-text {
+				width: 100%;
+				.strength-detail__headline {
+					text-align: center;
+				}
+			}
+		}
+
+	}
+	&__container-img {
+		border: 1.5px solid $theme-color02-Light02;
+		border-radius: 18.5px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 100%;
+		height: 65.5%;
+		opacity: 1;
+
+		@include bq(tb-s) {
+			width: 45%;
+		}
+	}
+	&__container-text {
+		margin-top: 20px;
+		width: 100%;
+
+		@include bq(tb-s) {
+			width: 52%;
+		}
+	}
+	&__headline {
+		border-bottom: 3px solid $theme-color02-Light02;
+		font-size: 1.2rem;
+		font-weight: bold;
+		letter-spacing: 3px;
+		line-height: 1.5;
+		opacity: 1;
+		padding-bottom: 20px;
+		text-align: left;
+	}
+	&__desc {
+		font-size: 1rem;
+		letter-spacing: 2.4px;
+		margin-top: 40px;
+		opacity: 1;
+		text-align: left;
+	}
 }
