@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>コバコ株式会社</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+	<script>
+	(function(d) {
+		var config = {
+		kitId: 'czo7hip',
+		scriptTimeout: 3000,
+		async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+	</script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script src="js/style.js"></script>
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="header__wrap ly-cont">
+			<a class="header__logo" href="">
+				<h1 class="header__logo-item"><img src="img/kobaco-logo01.webp" alt="kobaco-logo"></h1>
+			</a>
+			<div class="header__menu-btn is-active">
+				<div class="header__menu-btn__trigger">
+					<span></span>
+					<span>MENU</span>
+					<span></span>
+				</div>
+			</div>
+			<nav class="header__menu" id="g-nav">
+				<ul class="header__menu-list">
+					<li class="header__menu-item">
+						<a class="header__menu-item__link" href="">HOME</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item__link" href="#about">会社概要</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-item__link" href="#strength">KOBACOの強み</a>
+					</li>
+
+					<li class="header__menu-item">
+						<a class="header__menu-item__link" href="#contact">お問い合わせ</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main" id="contact-form">
+		<div class="common-parts ly-cont">
+			<div class="breadcrumb">
+				<ul class="breadcrumb__list">
+					<li class="breadcrumb__list-item"><a href="/index.html">トップ</a></li>
+					<li class="breadcrumb__list-item"><a href="#">お問い合わせフォーム</a></li>
+				</ul>
+			</div>
+			<div class="top-cont">
+				<div class="top-cont__title-wrap">
+					<div class="top-cont__title-en">CONTACT FORM</div>
+					<h1 class="top-cont__title-ja">お問い合わせフォーム</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="top-illust">
+			<img src="img/top-contact-item.png" alt="">
+		</div>
+
+		<div class="form__headline">
+			<div class="ly-cont">
+				<p class="form__headline-desc">サービスについてのご質問・お見積りの<br class="noneTab">ご相談など、お気軽にお問い合わせください。</p>
+			</div>
+		</div>
+
+		<div class="form__main">
+			<div class="ly-cont">
+			<div class="form__wrap">
+				<p class="form__desc">※のついた項目は入力必須となります</p>
+				<form class="form__manu-wrap" action="" method="post">
+					<div class="form__menu">
+						<div class="form__title">御社名<span class="must">*</span></div>
+						<div class="form__content">
+							<input class="form__input" id="form__company" type="text" name="company" placeholder="コバコ株式会社" required>
+						</div>
+					</div>
+					<div class="form__menu">
+						<div class="form__title">お名前<span class="must">*</span></div>
+						<div class="form__content">
+							<input class="form__input" id="form__userName" type="text" name="userName" placeholder="コバコ太郎" required>
+						</div>
+					</div>
+					<div class="form__menu">
+						<div class="form__title noneRequired">ふりがな<span class="must">*</span></div>
+						<div class="form__content">
+							<input class="form__input" id="form__userkana" type="text" name="userkana" placeholder="こばこたろう">
+						</div>
+					</div>
+					<div class="form__menu">
+						<div class="form__title">お電話番号<span class="must">*</span></div>
+						<div class="form__content">
+							<input class="form__input" id="form__userPhone" type="text" name="userPhone" placeholder="0123-45-6789" required>
+						</div>
+					</div>
+					<div class="form__menu">
+						<div class="form__title">メールアドレス<span class="must">*</span></div>
+						<div class="form__content">
+							<input class="form__input" id="form__userMail" type="text" name="userMail" placeholder="contact@kobaco.co.jp" required>
+						</div>
+					</div>
+					<div class="form__menu">
+						<div class="form__title">お問い合わせ内容<span class="must">*</span></div>
+						<div class="form__content">
+							<textarea class="form__input" id="form_userMessage" name="userMessage" rows="10" placeholder="ご用件を入力してください"></textarea>
+						</div>
+					</div>
+					<input class="form__submitBtn" id="" type="submit" name=""  value="送信内容を確認する">
+				</form>
+			</div>
+		</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<section class="contact" id="contact">
+			<div class="contact__wrap">
+				<div class="contact__headline">
+					<h2 class="headline">
+						CONTACT
+						<span class="headline-sub">お問い合わせ</span>
+					</h2>
+				</div>
+				<div class="contact__content">
+					<div class="contact__tel">
+						<div class="contact__tel-item">
+							<a href="tel:06-4256-8375">TEL:06-4256-8375</a>
+						</div>
+						<div class="contact__tel-item">
+							FAX:06-4302-0911
+						</div>
+					</div>
+					<p class="contact__desc">サービスについてのご質問・お見積りのご相談など、お気軽にお問い合わせください。</p>
+					<div class="contact__info">
+						<div class="contact__info-line__triangle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="contact__info-line">
+							<div class="contact__info-line__btn btn-wrap">
+								<a class="text-white" href="#">LINEでお問い合わせ</a>
+							</div>
+							<img src="img/kobaco_line-img.jpg" alt="">
+						</div>
+						<!-- <div class="contact__btn btn-wrap"><a class="text-white" href="">お問い合わせフォーム</a></div> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<p class="copyright">
+			<small>Copyright &copy; 2023 Kobaco Co., Ltd.</small>
+		</p>
+		<div class="to-top">
+			<a href="#top">PAGE TOP</a>
+		</div>
+	</footer>
+
+</body>
+</html>
